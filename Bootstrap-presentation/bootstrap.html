@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Presentation Bootstrap</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		
+        <!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Vad är Bootstarp? & Hur använder du Bootstrap -->
+			<div class="slides">
+				<section>
+					<h1>Bootstrap</h1>
+					<p>
+						<small>Presentation av <a href="http://hakim.se">Zeena Elia</a> and <a href="https://github.com/zeena83">GitHub</a></small>
+					</p>
+				</section>
+
+				<!--Vad är Bootsrap? -->
+				<section>
+					<h1>Bootstrap</h1>
+					<p class="p1" style="font-size: 50px; font-style: italic; font-weight: bold;" >vad är Bootstrap?</p>
+						<ul style="font-size: 33px;">
+							<li>Bootstrap är ett av de populärare projekten hos GitHub.</li>
+							<li>Det grundades av Mark Otto och Jacob Thornton på Twitter.</li>
+							<li>Med Bootstrap kan du skapa snygg hemsida i responsiv design för mobil och surfplatta. Dvs. det finns hjälp och färdig kod för allt; till exempel menyer, navbar, knappar ,,,ect, som fungerar lika bra på alla stationära och mobila enheter.</li>
+							<li> Består av HTML, CSS, JavaScript, Sass, LESS.</li>
+							<li>Kräver grundläggande kunskap HTML5.</li>
+							
+					    </ul>
+				</section>
+				
+				<!--Så här använder du Bootsrap! -->
+				<section>
+					<h2>Använda Bootstrap</h2>
+					<p class="p1">För att använda Bootstrap du kan välja något av dessa två alternativen nedan:</p>
+						<ol>
+							<li>Ladda ner Bootstrap från <a href="https://slides.com" target="_blank">getbootstrap.com</a>.</li>
+							<li>Använd Bootstrap-CDN länken <a href="https://slides.com" target="_blank">https://www.bootstrapcdn.com/</a>. </li>
+						</ol>
+				</section>
+				<section>
+					<section>
+						<p class="p1">För att kunna använda hela Bootstrap behöver du lägga in tre taggar i din head-tagg. Klicka på pilen nedan:</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<p class="p1">De två första för att kunna använda all funktionalitet och den tredje för Bootstraps CSS fil.</p>
+						<pre><code class="hljs" data-trim contenteditable>
+						  <head>
+							<!-- jQuery -->
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+							<!-- Bootstrap JavaScript -->
+							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+							<!-- Bootsrap CSS -->
+							<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+						  </head>
+						</code></pre>
+				   </section>
+				   <section>
+						<p class="p1">Du kan också lägga in en egen CSS-fil och det är viktigt att lägga sista taggen innan "/head-taggen", för att din egen design skall skriva över Bootstrap-filen så att du kan designa om vissa delar själv. Exempel:</p>
+					    <pre><code class="hljs" data-trim contenteditable>
+						  <head>
+							<!-- Egen CSS-fil, man lägger in egen CSS-fil sista taggen innan </head>-taggen. -->
+						    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+						  </head>
+						</code></pre>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+				
+		        <!-- Containers -->
+				<section>
+					<section>
+						<h2>Containers</h2>
+						<p class="p1">För att applicera Bootstrap-layout på sitt dokument använder man speciella CSS-klasser. Alla Bootstrap-klasser ska finnas inuti en container-klass. Du kan ange någon av dessa två klasser nedan:</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<p class="p1"><span style="color:blue;">.container</span>-klassen fyller sidan men har marginaler. Eller så använder man container för att koden skall placeras i mitten och ge lite marginaler på sidorna.</p>
+						<pre><code class="hljs" data-trim contenteditable>
+						<div class="container">
+									  <button type="button" class="btn btn-primary">container</button>
+									  <button type="button" class="btn btn-danger">container</button>
+									  <button type="button" class="btn btn-warning">container</button>
+						 </div> 
+						</code></pre>
+						
+				   </section>
+				   <section>
+					   <p class="p1"><span style="color:blue;">.container-fluid</span> klassen fyller hela sidans bredd.</p>
+					   <pre><code class="hljs" data-trim contenteditable>
+						<div class="container-fluid">
+									  <button type="button" class="btn btn-primary">container-fluid</button>
+									  <button type="button" class="btn btn-danger">container-fluid</button>
+									  <button type="button" class="btn btn-warning">container-fluid</button>
+						</div> 
+					  </code></pre>
+					   
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+				
+				<!-- Grid system -->
+				<section>
+					<h2>Grid system</h2>
+					<p>Ett smart sätt att strukturera innehållet på sin hemsida är (genom) att göra kolumner. Bootstrap skapar CSS-klasser som vi kan använda för att beskriva kolumner. En sida delas in i 12 kolumner.<br>
+					Du får gärna göra kolumner i olika storlekar, se bara till att de blir totalt 12 om alla ska få plats på en rad!</p>
+				</section>
+				<!-- Grid options -->
+				<section>
+					<h2>Grid options</h2>
+					<p>Det finns fyra skärmstorlekar:</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Extra small</th>
+								<th>Small</th>
+								<th>Medium</th>
+								<th>Large</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>xs</td>
+								<td>sm</td>
+								<td>m</td>
+								<td>lg</td>
+							</tr>
+							<tr>
+								<td>Phones (<768px)</td>
+								<td>Tablets (≥768px)</td>
+								<td>Desktops (≥992px)</td>
+								<td>Desktops (≥1200px)</td>
+							</tr>
+							<tr>
+								<td>col-xs-?</td>
+								<td>col-sm-?</td>
+								<td>col-md-?</td>
+								<td>col-lg-?</td>
+							</tr>
+						</tbody>
+					</table>
+					<p><span style="color:blue;">*</span>(frågetecknet kan vara 1-12)</p>
+				</section>
+				
+				<section>
+					<h2>Exempel:</h2>
+					<p>
+						Vi vill skapa fyra stycken lika stora kolumner med olika innehåll. Om du tittar på koden så står det   class=”col-sm-3” inom div-taggen. Vi vill att det skall bli siffran 12 med alla kolumner. Vi har fyra kolumner och alla med siffran 3. Det betyder att vi har 3 + 3 + 3 + 3 = 12 kolumners bredd på en liten skärm (Small, sm, Tablets (≥768px)).<a href="https://github.com/zeena83/exempel/blob/master/exempel.html" target="_blank">GitHub</a>.
+					</p>
+				</section>
+				
+				<section>
+					<br><br><br>
+					<p class="p1">För att kolumnerna ska fungera, ska de vara placerade inuti ett tagg med klassen row.</p>
+					<p class="p1">Exempel:</p>
+					<pre><code class="hljs" data-trim contenteditable>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4"> 4 kolumner bred på stor skärm </div>
+								<div class="col-sm-8 col-lg-4"> 8 kolumner bred på en liten skärm, fyra på en stor </div>
+							</div>
+						</div>
+                   </code></pre>
+				</section>
+				
+				<section>
+					<p class="p1">Exempel: Mobile, tablet, desktop</p>
+					<pre><code class="hljs" data-trim contenteditable>
+					<div class="container">
+							<div class="row">
+								  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+								  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+							</div>
+							<div class="row">
+								  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+								  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+								  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+								  <div class="clearfix visible-xs-block"></div>
+								  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+							</div>
+					</div>
+                    </code></pre>
+				</section>
+				
+				<section>
+					<p>Man kan ha rader inuti kolumn-element, exempel:</p>
+					<pre><code class="hljs" data-trim contenteditable>
+						<div class="container">
+							<div class="row">
+								  <div class="col-sm-9">Level 1: .col-sm-9
+									<div class="row">
+									  <div class="col-xs-8 col-sm-6">Level 2: .col-xs-8 .col-sm-6</div>
+									  <div class="col-xs-4 col-sm-6">Level 2: .col-xs-4 .col-sm-6</div>
+									</div>
+								  </div>
+  					</div>
+						</div>
+                    </code></pre>
+				</section>
+				
+				<section>
+					<h2>Mer Bootstrap</h2>
+					<p>
+						För mer information om Bootstrap 3 och Bootstrap 4, läs på:<br>
+						<a href="https://www.w3schools.com/bootstrap/default.asp">Bootstrap 3</a> - 
+						<a href="https://www.w3schools.com/bootstrap4/default.asp">Bootstrap 4</a>
+					</p>
+				</section>
+				
+			    <section>
+					<h2>Bootstrap 4 in 2018 - Free Crash Course of 4.0.0</h2>
+					<iframe width="560" height="315"  src="https://www.youtube.com/embed/hnCmSXCZEpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		        </section>
+				
+				<section>
+					<h2>Övningar</h2>
+					<ol>
+						<li>CodeAcademy, <a href="https://www.codecademy.com/es/courses/web-beginner-en-yjvdd/0/1" target="_blank">https://www.codecademy.com/es/courses/web-beginner-en-yjvdd/0/1.</a></li>
+						<li>Lägg till Bootstrap CDN. Lägga till en navbar.<a href="https://github.com/zeena83/Bootstrap-presentation" target="_blank">GitHub.</a></li>
+						<li>Lägga till container, sendan byta container till container-fluid och ser skilnad mellan båda två.<a href="https://github.com/zeena83/Bootstrap-presentation" target="_blank">GitHub.</a></li>
+						<li>Grid system, <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp" target="_blank">https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp.</a></li>
+						<li>Bootstrap Themes, <a href="https://www.w3schools.com/bootstrap/bootstrap_templates.asp" target="_blank">https://www.w3schools.com/bootstrap/bootstrap_templates.asp.</a> </li>
+						
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Resurser</h2>
+					<ol>
+						<li><a href="https://www.codecademy.com/es/courses/web-beginner-en-yjvdd/0/1" target="_blank">https://www.codecademy.com/es/courses/web-beginner-en-yjvdd/0/1</a></li>
+						<li><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a></li>
+						<li><a href="https://getbootstrap.com/docs/3.3/css/" target="_blank">https://getbootstrap.com/docs/3.3/css/</a></li>
+						<li><a href="https://www.jquery-az.com/bootstrap-4/" target="_blank">https://www.jquery-az.com/bootstrap-4/</a></li>
+						<li><a href="https://www.jquery-az.com/bootstrap-container-and-container-fluid-what-is-the-difference/" target="_blank">https://www.jquery-az.com/bootstrap-container-and-container-fluid-what-is-the-difference/</a></li>
+						<li><a href="https://www.cheatography.com/masonjo/cheat-sheets/bootstrap/" target="_blank">https://www.cheatography.com/masonjo/cheat-sheets/bootstrap/</a></li>
+					</ol>
+				</section>
+				
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+				
+				<section>
+					<h1>Slut!</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
