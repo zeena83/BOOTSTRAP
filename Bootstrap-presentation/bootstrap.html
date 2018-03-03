@@ -50,16 +50,24 @@
 
 				<!--Vad är Bootsrap? -->
 				<section>
-					<h1>Bootstrap</h1>
-					<p class="p1" style="font-size: 50px; font-style: italic; font-weight: bold;" >vad är Bootstrap?</p>
-						<ul style="font-size: 33px;">
-							<li>Bootstrap är ett av de populärare projekten hos GitHub.</li>
-							<li>Det grundades av Mark Otto och Jacob Thornton på Twitter.</li>
-							<li>Med Bootstrap kan du skapa snygg hemsida i responsiv design för mobil och surfplatta. Dvs. det finns hjälp och färdig kod för allt; till exempel menyer, navbar, knappar ,,,etc, som fungerar lika bra på alla stationära och mobila enheter.</li>
-							<li> Består av HTML, CSS, JavaScript, Sass, LESS.</li>
-							<li>Kräver grundläggande kunskap HTML5.</li>
-							
-					    </ul>
+					<section>
+						<h1>Bootstrap</h1>
+						<p class="p1" style="font-size: 50px; font-style: italic; font-weight: bold;" >vad är Bootstrap?</p>
+							<ul style="font-size: 33px;">
+								<li>Bootstrap är ett av de populärare projekten hos GitHub.</li>
+								<li>Det grundades av Mark Otto och Jacob Thornton på Twitter.</li>
+								<li> Består av HTML, CSS, JavaScript, Sass, LESS.</li>
+								<li>Kräver grundläggande kunskap HTML5.</li>
+								<li>Med Bootstrap kan du skapa snygg hemsida i responsiv design för mobil och surfplatta. Dvs. det finns hjälp och färdig kod för allt; till exempel menyer, navbar, knappar ,,,etc, som fungerar lika bra på alla stationära och mobila enheter.</li>
+							</ul>
+						<a href="#" class="navigate-down">
+							<img width="80" height="80" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h3>responsiv design för mobil och surfplatta</h3>
+						<img src="web_design.png" class="img-thumbnail" alt="Cinque Terre">
+					</section>
 				</section>
 				
 				<!--Så här använder du Bootsrap! -->
@@ -79,9 +87,9 @@
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
-					<section>
+					<section >
 						<p class="p1">De två första för att kunna använda all funktionalitet och den tredje för Bootstraps CSS fil.</p>
-						<pre><code class="hljs" data-trim contenteditable>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 115em; font-size: 13px; position: relative; right:320px;">
 						  <head>
 							<!-- jQuery -->
 							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -95,7 +103,7 @@
 				   </section>
 				   <section>
 						<p class="p1">Du kan också lägga in en egen CSS-fil och det är viktigt att lägga sista taggen innan "/head-taggen", för att din egen design skall skriva över Bootstrap-filen så att du kan designa om vissa delar själv. Exempel:</p>
-					    <pre><code class="hljs" data-trim contenteditable>
+					    <pre><code class="hljs" data-trim contenteditable  style="word-wrap: break-word; width: 46.4em; font-size: 20px;">
 						  <head>
 							<!-- Egen CSS-fil, man lägger in egen CSS-fil sista taggen innan </head>-taggen. -->
 						    <link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -120,18 +128,17 @@
 					</section>
 					<section>
 						<p class="p1"><span style="color:blue;">.container</span>-klassen fyller sidan men har marginaler. Eller så använder man container för att koden skall placeras i mitten och ge lite marginaler på sidorna.</p>
-						<pre><code class="hljs" data-trim contenteditable>
+						<pre><code class="hljs" data-trim contenteditable  style="word-wrap: break-word; width: 50em; font-size: 18px; position: relative; right:48px;" >
 						<div class="container">
-									  <button type="button" class="btn btn-primary">container</button>
-									  <button type="button" class="btn btn-danger">container</button>
-									  <button type="button" class="btn btn-warning">container</button>
-						 </div> 
+									<button type="button" class="btn btn-primary">container</button>
+									<button type="button" class="btn btn-danger">container</button>
+									<button type="button" class="btn btn-warning">container</button>
+						</div> 
 						</code></pre>
-						
 				   </section>
 				   <section>
 					   <p class="p1"><span style="color:blue;">.container-fluid</span> klassen fyller hela sidans bredd.</p>
-					   <pre><code class="hljs" data-trim contenteditable>
+					   <pre><code class="hljs" data-trim contenteditable  style="word-wrap: break-word; width: 53em; font-size: 18px; position: relative; right:48px;">
 						<div class="container-fluid">
 									  <button type="button" class="btn btn-primary">container-fluid</button>
 									  <button type="button" class="btn btn-danger">container-fluid</button>
@@ -148,11 +155,22 @@
 				
 				<!-- Grid system -->
 				<section>
-					<h2>Grid system</h2>
-					<p>Ett smart sätt att strukturera innehållet på sin hemsida är (genom) att göra kolumner. Bootstrap skapar CSS-klasser som vi kan använda för att beskriva kolumner. En sida delas in i 12 kolumner.<br>
-					Du får gärna göra kolumner i olika storlekar, se bara till att de blir totalt 12 om alla ska få plats på en rad!</p>
+					 <section>
+							<h2>Grid system</h2>
+							<p class="p1">Ett smart sätt att strukturera innehållet på sin hemsida är genom att göra kolumner. Bootstrap skapar CSS-klasser som vi kan använda för att beskriva kolumner. En sida delas in i 12 kolumner.<br>
+							Du får gärna göra kolumner i olika storlekar, se bara till att de blir totalt 12 om alla ska få plats på en rad!</p>
+							<br>
+							<a href="#" class="navigate-down">
+								<img width="178" height="160" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					       </a>
+				    </section>
+					<section>
+						<h2>Grid system</h2>
+						<img src="1.png" class="img-thumbnail" alt="Cinque Terre">
+					</section>
 				</section>
 				<!-- Grid options -->
+				<section>
 				<section>
 					<h2>Grid options</h2>
 					<p>Det finns fyra skärmstorlekar:</p>
@@ -169,7 +187,7 @@
 							<tr>
 								<td>xs</td>
 								<td>sm</td>
-								<td>m</td>
+								<td>md</td>
 								<td>lg</td>
 							</tr>
 							<tr>
@@ -187,20 +205,38 @@
 						</tbody>
 					</table>
 					<p><span style="color:blue;">*</span>(frågetecknet kan vara 1-12)</p>
+					<br>
+					<a href="#" class="navigate-down">
+						<img width="178" height="160" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					</a>
+				</section>
+				<section>
+					<h2>Frågetecknet kan vara 1-12:</h2>
+						<img src="dzone4.png" class="img-thumbnail" alt="Cinque Terre">
+				</section>
 				</section>
 				
 				<section>
-					<h2>Exempel:</h2>
-					<p>
-						Vi vill skapa fyra stycken lika stora kolumner med olika innehåll. Om du tittar på koden så står det   class=”col-sm-3” inom div-taggen. Vi vill att det skall bli siffran 12 med alla kolumner. Vi har fyra kolumner och alla med siffran 3. Det betyder att vi har 3 + 3 + 3 + 3 = 12 kolumners bredd på en liten skärm (Small, sm, Tablets (≥768px)).<a href="https://github.com/zeena83/exempel/blob/master/exempel.html" target="_blank">GitHub</a>.
-					</p>
-				</section>
+					<section>
+						<h2>Exempel:</h2>
+						<p class="p1">
+						Vi vill skapa fyra stycken lika stora kolumner med olika innehåll. Om du tittar på koden så står det   class=”col-sm-3” inom div-taggen. Vi vill att det skall bli siffran 12 med alla kolumner. Vi har fyra kolumner och alla med siffran 3. Det betyder att vi har 3 + 3 + 3 + 3 = 12 kolumners bredd på en liten skärm (Small, sm, Tablets (≥768px)).
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="160" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<p class="p1">Här har vi skapat fyra stycken lika stora kolumner, och du kan titta på koden här <a href="https://github.com/zeena83/exempel/blob/master/exempel.html" target="_blank">GitHub</a></p>
+						<img src="grid.jpg" class="img-thumbnail" alt="Cinque Terre">
+				   </section>
+			   </section>
 				
-				<section>
+			   <section>
 					<br><br><br>
 					<p class="p1">För att kolumnerna ska fungera, ska de vara placerade inuti ett tagg med klassen row.</p>
 					<p class="p1">Exempel:</p>
-					<pre><code class="hljs" data-trim contenteditable>
+					<pre><code class="hljs" data-trim contenteditable  style="word-wrap: break-word; width: 58em; font-size: 18px; position: relative; right:48px;">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-4"> 4 kolumner bred på stor skärm </div>
@@ -212,7 +248,7 @@
 				
 				<section>
 					<p class="p1">Exempel: Mobile, tablet, desktop</p>
-					<pre><code class="hljs" data-trim contenteditable>
+					<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
 					<div class="container">
 							<div class="row">
 								  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
@@ -231,7 +267,7 @@
 				
 				<section>
 					<p>Man kan ha rader inuti kolumn-element, exempel:</p>
-					<pre><code class="hljs" data-trim contenteditable>
+					<pre><code class="hljs" data-trim contenteditable  style="word-wrap: break-word; width: 50em; font-size: 18px; position: relative; right:28px;">
 						<div class="container">
 							<div class="row">
 								  <div class="col-sm-9">Level 1: .col-sm-9
@@ -245,6 +281,309 @@
                     </code></pre>
 				</section>
 				
+				<!-- Bootstrap Images -->
+				<section>
+					<h3>Bildgalleri</h3>
+					<p class="p1">Du kan också använda bootstrap grid system för att skapa bildgalleri, <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h">klicka här för att komma till koderna</a>.</p>
+					<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+								<div class="row">
+									<div class="col-md-4">
+									  <div class="thumbnail">
+										<a href="img.jpg" target="_blank">
+										  <img src="img.jpg" alt="Lights" style="width:100%">
+										  <div class="caption">
+											<p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+										  </div>
+										</a>
+									  </div>
+									</div>
+									<div class="col-md-4">
+									  <div class="thumbnail">
+										<a href="img.jpg" target="_blank">
+										  <img src="img.jpg" alt="Nature" style="width:100%">
+										  <div class="caption">
+											<p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+										  </div>
+										</a>
+									  </div>
+									</div>
+									<div class="col-md-4">
+									  <div class="thumbnail">
+										<a href="img.jpg" target="_blank">
+										  <img src="img.jpg" alt="Fjords" style="width:100%">
+										  <div class="caption">
+											<p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+										  </div>
+										</a>
+									  </div>
+									</div>
+							  </div>
+                    </code></pre>
+				</section>
+				
+				<!-- Bootstrap Buttons -->
+				<section>
+					<section>
+						<h3>Bootstrap Buttons</h3>
+						<p class="p1">Bootstrap har olika knappar, och för att uppnå dom knapparna har följande klasser:</p>
+						<ul>
+							<li>.btn</li>
+							<li>.btn-default</li>
+							<li>.btn-primary</li>
+							<li>.btn-success</li>
+							<li>.btn-info</li>
+							<li>.btn-warning</li>
+							<li>.btn-danger</li>
+							<li>.btn-link</li>
+						</ul>
+						<br>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="20" height="30" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						
+						<p class="p1">Följande exempel visar koden för olika knappar, <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_button_styles&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+							<button type="button" class="btn">Basic</button>
+							<button type="button" class="btn btn-default">Default</button>
+							<button type="button" class="btn btn-primary">Primary</button>
+							<button type="button" class="btn btn-success">Success</button>
+							<button type="button" class="btn btn-info">Info</button>
+							<button type="button" class="btn btn-warning">Warning</button>
+							<button type="button" class="btn btn-danger">Danger</button>
+							<button type="button" class="btn btn-link">Link</button>
+						</code></pre>
+					</section>
+				</section>
+				
+				<!-- Bootstrap Glyphicons -->
+				<section>
+					<section>
+						<h3>Bootstrap Glyphicons</h3>
+						<p class="p1">Bootstrap ger 260 glyphicons, glyphicons kan användas i text, knappar, navigering, former, etc. Ett glyphicons infogas med följande syntax:</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+							<span class="glyphicon glyphicon-name"></span>
+						</code></pre>
+						
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="150" height="200" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h3>Glyphicon Example</h3>
+						<p class="p1">Följande exempel visar olika sätt att använda glyficoner:<a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_glyphs&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+							<p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p> 
+							<p>Envelope icon as a link:
+							  <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+							</p>
+							<p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+							<p>Search icon on a button:
+							  <button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span> Search
+							  </button>
+							</p>
+							<p>Search icon on a styled button:
+							  <button type="button" class="btn btn-info">
+								<span class="glyphicon glyphicon-search"></span> Search
+							  </button>
+							</p>
+							<p>Print icon: <span class="glyphicon glyphicon-print"></span></p> 
+							<p>Print icon on a styled link button:
+							  <a href="#" class="btn btn-success btn-lg">
+								<span class="glyphicon glyphicon-print"></span> Print 
+							  </a>
+							</p>
+						</code></pre>
+					</section>
+				</section>
+				
+				<!-- Bootstrap Forms -->
+				<section>
+					<section>
+						<h3>Bootstrap Forms</h3>
+						<p class="p1">Bootstrap Forms har tre typer:</p>
+						<ul>
+							<li>Vertical form (this is default)</li>
+							<li>Horizontal form</li>
+							<li>Inline form</li>
+						</ul>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="150" height="200" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h3>Vertical form</h3>
+						<p class="p1">Följande exempel skapar en vertical form med två input fält, en checkboxoch en submit button:<a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_form_basic&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+							<form action="/action_page.php">
+								  <div class="form-group">
+									<label for="email">Email address:</label>
+									<input type="email" class="form-control" id="email">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd">
+								  </div>
+								  <div class="checkbox">
+									<label><input type="checkbox"> Remember me</label>
+								  </div>
+								  <button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</code></pre>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="150" height="200" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+						
+					</section>
+					<section>
+						<h3>Horizontal form</h3>
+						<p class="p1">Följande exempel skapar en horizontal form med två input fält, en checkboxoch en submit button:<a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_form_horizontal&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+							<form class="form-horizontal" action="/action_page.php">
+							  <div class="form-group">
+								<label class="control-label col-sm-2" for="email">Email:</label>
+								<div class="col-sm-10">
+								  <input type="email" class="form-control" id="email" placeholder="Enter email">
+								</div>
+							  </div>
+							  <div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Password:</label>
+								<div class="col-sm-10"> 
+								  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+								</div>
+							  </div>
+							  <div class="form-group"> 
+								<div class="col-sm-offset-2 col-sm-10">
+								  <div class="checkbox">
+									<label><input type="checkbox"> Remember me</label>
+								  </div>
+								</div>
+							  </div>
+							  <div class="form-group"> 
+								<div class="col-sm-offset-2 col-sm-10">
+								  <button type="submit" class="btn btn-default">Submit</button>
+								</div>
+							  </div>
+							</form>
+						</code></pre>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="150" height="200" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+						
+					</section>
+					
+					<section>
+						<h3>Bootstrap Inline Form</h3>
+						<p class="p1">Följande exempel skapar en inline form med två input fält, en checkboxoch en submit button:<a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_form_inline&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 57em; font-size: 18px; position: relative; right:90px;">
+							<form class="form-inline" action="/action_page.php">
+							  <div class="form-group">
+								<label for="email">Email address:</label>
+								<input type="email" class="form-control" id="email">
+							  </div>
+							  <div class="form-group">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control" id="pwd">
+							  </div>
+							  <div class="checkbox">
+								<label><input type="checkbox"> Remember me</label>
+							  </div>
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</code></pre>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="150" height="200" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+						
+					</section>
+					
+				</section>
+				
+				<!-- Bootstrap Modal Plugin -->
+				<section>
+					<section>
+						<h3>Bootstrap Modal Plugin</h3>
+						<p class="p1">Följande exempel visar hur man skapar en modal, <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_modal&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 63em; font-size: 18px; position: relative; right:150px;">
+							<!-- Trigger the modal with a button -->
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+							<!-- Modal -->
+							<div id="myModal" class="modal fade" role="dialog">
+							  <div class="modal-dialog">
+
+								<!-- Modal content-->
+								<div class="modal-content">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Modal Header</h4>
+								  </div>
+								  <div class="modal-body">
+									<p>Some text in the modal.</p>
+								  </div>
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								  </div>
+								</div>
+
+							  </div>
+							</div>
+						</code></pre>
+					</section>
+				</section>
+				
+				<!-- Bootstrap Carousel Plugin -->
+				<section>
+					<section>
+						<h3>Bootstrap Carousel Plugin</h3>
+						<p class="p1">Följande exempel visar hur man skapar en carousel, <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel&stacked=h">klicka här för att komma till koderna</a>.</p>
+						<pre><code class="hljs" data-trim contenteditable style="word-wrap: break-word; width: 63em; font-size: 18px; position: relative; right:150px;">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+								<div class="item active">
+								  <img src="la.jpg" alt="Los Angeles">
+								</div>
+
+								<div class="item">
+								  <img src="chicago.jpg" alt="Chicago">
+								</div>
+
+								<div class="item">
+								  <img src="ny.jpg" alt="New York">
+								</div>
+							  </div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</code></pre>
+					</section>
+				</section>
+					
+				<!-- Mer Bootstra -->
 				<section>
 					<h2>Mer Bootstrap</h2>
 					<p>
@@ -254,11 +593,14 @@
 					</p>
 				</section>
 				
+				
+				<!-- Bootstrap 4 in 2018 - Free Crash Course of 4.0.0 -->
 			    <section>
 					<h2>Bootstrap 4 in 2018 - Free Crash Course of 4.0.0</h2>
 					<iframe width="560" height="315"  src="https://www.youtube.com/embed/hnCmSXCZEpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		        </section>
 				
+				<!-- Övningar -->
 				<section>
 					<h2>Övningar</h2>
 					<ol>
@@ -271,11 +613,8 @@
 					</ol>
 				</section>
 				
-				<section>
-					<h2>Instruktioner & Övningar</h2>
-					<a href="https://github.com/zeena83/-vningar">Instruktioner & Mer övningar </a>
-				</section>
 				
+				<!-- Resurser -->
 				<section>
 					<h2>Resurser</h2>
 					<ol>
@@ -288,6 +627,7 @@
 					</ol>
 				</section>
 				
+				<!-- Transition Styles -->
 				<section id="transitions">
 					<h2>Transition Styles</h2>
 					<p>
@@ -300,7 +640,8 @@
 						<a href="?transition=zoom#/transitions">Zoom</a>
 					</p>
 				</section>
-
+				
+                <!-- Themes -->
 				<section id="themes">
 					<h2>Themes</h2>
 					<p>
