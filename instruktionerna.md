@@ -2,10 +2,9 @@
 ## Det här behöver du för att börja arbeta med bootstrap:
 * Du bör ha grundkunskaper i HTML&CSS. Det är bra att veta vad HTML och CSS är, och hur dom arbeta med varandra.
 * Ladda ner Brackets program för att börja skriva kod. ” http://brackets.io/”.  
-* Du måste länka in Bootstrap CDN i din HTML fil:
-<!-- Bootstrap CDN -->
-Dom två första lägga innanför <head></head>, och den tredje sista taggen inanna </body>.
-ovning.html-fil såhär: 
+* Du måste länka in Bootstrap CDN i din HTML fil, dom två första lägga innanför ```html <head></head>```, och den tredje sista taggen inanna ```html</body>``` såhär:.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,7 @@ ovning.html-fil såhär:
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
+```
 
 * Tips: kolla på bootstrap guide: “ https://www.youtube.com/watch?time_continue=344&v=no-Ntkc836w” .  
 
