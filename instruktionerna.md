@@ -27,6 +27,7 @@
 </body>
 </html>
 ```
+---
 
 * Tips: kolla på bootstrap guide: “ https://www.youtube.com/watch?time_continue=344&v=no-Ntkc836w” .  
 
