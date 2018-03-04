@@ -384,6 +384,6 @@
 
 --------
 
-* Under olika exempel finns färdig kod som du enkelt kopierar och klistrar in i din HTML-fil. Det du nu måste göra är att ändra vad som skall stå istället för det som bootstrap har skrivit in.
+#### Under olika exempel finns färdig kod som du enkelt kopierar och klistrar in i din HTML-fil. Det du nu måste göra är att ändra vad som skall stå istället för det som bootstrap har skrivit in.
 
 #### Här gäller det att ha tålamod och våga att testa sig fram! Lycka till!
